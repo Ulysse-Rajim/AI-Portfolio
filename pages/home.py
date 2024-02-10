@@ -8,19 +8,16 @@ def show():
     
     # Introduction section
     st.write("""
-        Hi, I'm [Your Name]! I'm an AI practitioner with a love for turning complex 
-        data into actionable insights. I have a background in [Your Background], and 
-        I've worked on projects involving [List a Few Types of Projects].
+        Hi, I'm Ulysse! I'm an AI engineer with a love for exploring new AI technologies. I have a background in Telecommunications and computer science, and 
+        I've worked on projects involving LLMs, RAG architectures,...
     """)
     
     # Skills section
     st.subheader("Skills")
     st.write("""
-        - Machine Learning
-        - Data Analysis
-        - Natural Language Processing
+        - Deep Learning
+        - LLMs
         - Computer Vision
-        - Deep Learning Frameworks (TensorFlow, PyTorch)
     """)
     
     # You can continue adding more sections like 'Experience', 'Education', etc.

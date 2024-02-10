@@ -1,10 +1,11 @@
 import streamlit as st
-from pages import home, projects
+from pages import home, projects, chatbot
 
 # Define the pages
 PAGES = {
     "Home": home,
-    "Projects": projects
+    "Projects": projects,
+    "Chatbot": chatbot
 }
 
 def main():
