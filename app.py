@@ -1,21 +1,29 @@
 import streamlit as st
-from pages import callbot, chatbot
+#from pages import callbot, chatbot
 
 # Define the pages
-PAGES = {
-    #"Home": home,
-    #"Projects": projects,
-    "Chatbot": chatbot,
-    "Callbot": callbot,
-}
+#PAGES = {
+#    #"Home": home,
+#    #"Projects": projects,
+#    "Chatbot": chatbot,
+#    "Callbot": callbot,
+#}
 
 def main():
-    st.set_page_config(page_title="AI Portfolio", layout="wide")
+    st.set_page_config(
+        page_title="AI Portfolio",
+        page_icon="🤖",
+        layout="wide",
+        )
+    
+    #st.title("AI Portfolio")
+    st.sidebar.success("Select a demo above")
     
     # Load the custom CSS
     with open('styles/style.css', 'r') as f:
         css = f.read()
     st.markdown(f'<style>{css}</style>', unsafe_allow_html=True)
+
 
     # Streamlit app code
     create_header("My AI Portfolio")
@@ -44,7 +52,7 @@ def create_footer():
     st.markdown(
         """
         <div class="footer" id="custom-footer">
-            <p>Designed by Your Name | © 2024 All rights reserved</p>
+            <p>Designed by Ulysse Rajim | © 2024 All rights reserved</p>
         </div>
         """,
         unsafe_allow_html=True,

@@ -1,16 +1,19 @@
 /* Header styles */
-#custom-header {
-  font-size: x-large;
+#custom-header,
+#custom-header * {
+  font-size: xx-large;
   font-weight: bold;
-  background-color: #4c9f70;
-  color: white;
-  padding: 20px;
+  background-color: #4c9f70; /* Background color */
+  color: white !important; /* Text color, ensured with !important */
+  padding: 40px;
+  padding-top: 80px; /* Increase this value to push content down */
+  padding-left: 380px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 999;
-  text-align: center;
+  text-align: left; /* Align text to the left */
   border-bottom: 2px solid #36614d;
 }
 
