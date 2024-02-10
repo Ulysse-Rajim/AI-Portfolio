@@ -1,0 +1,28 @@
+# Ignore Windows system files
+Thumbs.db
+ehthumbs.db
+
+# Ignore Python virtual environments
+venv/
+.venv/
+
+# Ignore Streamlit secrets
+.streamlit/secrets.toml
+.config.toml
+
+# Ignore other sensitive files
+*.pem
+*.key
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore build directories
+build/
+dist/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/

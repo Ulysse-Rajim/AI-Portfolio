@@ -1,12 +1,12 @@
 import streamlit as st
-from . import home
 from pages import callbot, chatbot
 
 # Define the pages
 PAGES = {
     #"Home": home,
     #"Projects": projects,
-    "Chatbot": chatbot
+    "Chatbot": chatbot,
+    "Callbot": callbot,
 }
 
 def main():
@@ -25,8 +25,8 @@ def main():
     #selection = st.sidebar.radio("Go to", list(PAGES.keys()))
 
     # Page Display
-    page = PAGES[selection]
-    page.show()
+    #page = PAGES[selection]
+    #page.show()
 
     create_footer()
 
