@@ -1,10 +1,11 @@
 import streamlit as st
-from pages import home, projects, chatbot
+from . import home
+from pages import callbot, chatbot
 
 # Define the pages
 PAGES = {
-    "Home": home,
-    "Projects": projects,
+    #"Home": home,
+    #"Projects": projects,
     "Chatbot": chatbot
 }
 
@@ -20,8 +21,8 @@ def main():
     create_header("My AI Portfolio")
 
     # Navigation
-    st.sidebar.title("Navigation")
-    selection = st.sidebar.radio("Go to", list(PAGES.keys()))
+    #st.sidebar.title("Navigation")
+    #selection = st.sidebar.radio("Go to", list(PAGES.keys()))
 
     # Page Display
     page = PAGES[selection]
